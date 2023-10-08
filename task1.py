@@ -31,7 +31,7 @@ while X == "C":
 
     else:
         print("Not Available")
-        operator = input("Choose The operator").strip()
+        operator = input("Choose The operator").strip().capitalize()
 else:
         while X == "T" :
             
@@ -43,6 +43,9 @@ else:
                 elif convert == "D":
                     n1 = int(input("Enter The number"))
                     print(f"Your Answer is  {bin(n1)}")
+                elif convert == "Change" :
+                  X = input("Choose The calculation or Transformation:").strip().capitalize()
+                  
                 else :
                   break
         else :
