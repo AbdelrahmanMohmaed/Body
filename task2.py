@@ -1,8 +1,9 @@
-Number = 6
+import random
+n = random.randrange(1,11)
 The_Guessing_Number = int(input("Guess The Number :"))
 Tries = 4
-while The_Guessing_Number != Number:
-    if The_Guessing_Number > Number:
+while The_Guessing_Number != n:
+    if The_Guessing_Number > n:
         print(f"Your number is higher , Correct Number is Lower Than {The_Guessing_Number}")
         Tries -= 1
         print(f"You Have only  {Tries} Chances left  ")
