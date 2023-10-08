@@ -33,14 +33,15 @@ while X == "C":
         print("Not Available")
         operator = input("Choose The operator").strip()
 else:
-    if X == "T":
-        convert = input("Choose convert from Decimal to binary {D} or Binary to decimal {B}").strip()
-        if convert == "D":
-            n1 = str(input("Enter The number"))
-            n2 = int(n1, 2)
-            print(f" Your Answer is : {n2}")
-        elif convert == "B":
-            n1 = int(input("Enter The number"))
-            print(f"Your Answer is  {bin(n1)}")
+        while X == "T" :
+            
+                convert = input("Choose convert from Decimal to binary {D} or Binary to decimal {B}").strip()
+                if convert == "B":
+                    n1 = str(input("Enter The number"))
+                    n2 = int(n1, 2)
+                    print(f" Your Answer is : {n2}")
+                elif convert == "D":
+                    n1 = int(input("Enter The number"))
+                    print(f"Your Answer is  {bin(n1)}")
         else :
-            print("Wrong")
+                print("Wrong")
