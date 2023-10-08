@@ -35,7 +35,7 @@ while X == "C":
 else:
         while X == "T" :
             
-                convert = input("Choose convert from Decimal to binary {D} or Binary to decimal {B}").strip()
+                convert = input("Choose convert from Decimal to binary {D} or Binary to decimal {B}").strip().capitalize()
                 if convert == "B":
                     n1 = str(input("Enter The number"))
                     n2 = int(n1, 2)
