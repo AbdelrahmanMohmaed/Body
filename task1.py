@@ -43,5 +43,7 @@ else:
                 elif convert == "D":
                     n1 = int(input("Enter The number"))
                     print(f"Your Answer is  {bin(n1)}")
+                else :
+                  break
         else :
                 print("Wrong")
