@@ -6,23 +6,23 @@ while X != "END":
     if X == "C":
         operator = input("Choose The operator").strip()
         if operator == "+":
-            n1 = int(input("Enter The First number"))
-            n2 = int(input("Enter The Second number"))
+            n1 = int(input("Enter The First number :"))
+            n2 = int(input("Enter The Second number :"))
             print(f"=>>  {n1 + n2} ")
         elif operator == "*":
-            n1 = int(input("Enter The First number"))
-            n2 = int(input("Enter The Second number"))
+            n1 = int(input("Enter The First number :"))
+            n2 = int(input("Enter The Second number :"))
             print(f"=>>  {n1 * n2} ")
         elif operator == "-":
-            n1 = int(input("Enter The First number"))
-            n2 = int(input("Enter The Second number"))
+            n1 = int(input("Enter The First number :"))
+            n2 = int(input("Enter The Second number :"))
             print(f"=>>  {n1 - n2} ")
         elif operator == "/":
-            n1 = int(input("Enter The First number"))
-            n2 = int(input("Enter The Second number"))
+            n1 = int(input("Enter The First number :"))
+            n2 = int(input("Enter The Second number :"))
             print(f"=>>  {n1 / n2} ")
         elif operator == "sqrt":
-            n1 = int(input("Enter The First number"))
+            n1 = int(input("Enter The First number :"))
             print(sqrt(n1))
         elif operator == "Change":
             X = input("Choose The calculation or Transformation:").strip().capitalize()
