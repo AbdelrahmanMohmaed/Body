@@ -1,6 +1,6 @@
 from math import *
 
-X = input("Choose The calculation or Transformation:").strip().capitalize()
+X = input("Choose The calculation or Transformation for Calculatoin Choose >>{C} , for Choose Trans Choose >> {T}:").strip().capitalize()
 
 while X != "END":
     if X == "C":
@@ -24,10 +24,17 @@ while X != "END":
         elif operator == "sqrt":
             n1 = int(input("Enter The First number :"))
             print(sqrt(n1))
-        elif operator == "Change":
-            X = input("Choose The calculation or Transformation:").strip().capitalize()
+
         else:
-            print("Not Available")
+              print("Not Available")
+        print("Do want to Change or Not ")
+        y = input("For Choose Change  >> {Change} For End Choose > {End}").capitalize()
+        if y == "Change" :
+            X = input(
+                "Choose The calculation or Transformation for Calculatoin Choose >>{C} , for Choose Trans Choose >> {T}:").strip().capitalize()
+        else :
+            break
+
     elif X == "T":
         convert = input("Choose convert from Decimal to binary {D} or Binary to decimal {B}").strip().capitalize()
         if convert == "B":
@@ -41,6 +48,15 @@ while X != "END":
             X = input("Choose The calculation or Transformation:").strip().capitalize()
         else:
             print("wrong")
+        print("Do want to Change or Not ")
+        y = input("For Choose Change  >> {Change} For End Choose > {End}").capitalize()
+        if y == "Change" :
+            X = input(
+                "Choose The calculation or Transformation for Calculatoin Choose >>{C} , for Choose Trans Choose >> {T}:").strip().capitalize()
+        else :
+            break
+
+
 
 
     else:
