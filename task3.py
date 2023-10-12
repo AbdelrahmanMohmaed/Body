@@ -4,8 +4,8 @@ Users = {
     "Mohanad": {"PassWord": "789", "ID": "30106051400077"}
 }
 
-User_Name = str(input("Enter Your User Name : ")).strip().capitalize()
-PW = int(input("Enter Your User Password : "))
+User_Name = (input("Enter Your User Name : ")).strip().capitalize()
+PW = (input("Enter Your User Password : "))
 ID = Users[User_Name]["ID"]
 Year_of_Birth = Users[User_Name]["ID"][1:3]
 Day_Of_Birth = Users[User_Name]["ID"][5:7]
@@ -37,8 +37,8 @@ while User_Name in Users and PW == Users[User_Name]["PassWord"]:
     if X == "E":
         break
     elif X == "C":
-        User_Name = str(input("Enter Your User Name : ")).strip().capitalize()
-        PW = int(input("Enter Your User Password : "))
+        User_Name = (input("Enter Your User Name : ")).strip().capitalize()
+        PW = (input("Enter Your User Password : "))
 
 
 else:
